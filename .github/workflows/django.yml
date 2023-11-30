@@ -2,15 +2,16 @@ name: Python application
 
 on:
   push:
-    branches:
-      - egc_test
+     branches:
+	   - egc_test
   
 
 jobs:
   build:
-   strategy:
+    strategy:
       matrix:
-        psqlversion: ['14.9','15']
+        pyversion: ['14.9','15']
+
   
   
     runs-on: ubuntu-latest
